@@ -4,11 +4,14 @@ Checks deployment windows against freeze periods and high-risk launch hours.
 
 ```mermaid
 flowchart LR
-    N0["sample_windows.csv"]
-    N1["freeze_window.py"]
-    N2["parse time / is blocked / evaluate"]
-    N3["Result for operator review"]
-    N0 --> N1 --> N2 --> N3
+    A["Deploy time and freeze window"]
+    B["Compare the time to the freeze and tier-specific policy"]
+    C{"Policy blocks the time?"}
+    D["Block recommendation"]
+    E["Allow recommendation"]
+    A --> B --> C
+    C -->|Yes| D
+    C -->|No| E
 ```
 
 ## Operational boundaries
