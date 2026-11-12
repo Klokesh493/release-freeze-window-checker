@@ -2,7 +2,7 @@
 
 ## Business problem
 
-Checks deployment windows against freeze periods and high-risk launch hours.
+A deployment can be operationally ready and still conflict with a business freeze or a tier-specific risky period.
 
 ## Reproduce the workflow
 

@@ -22,6 +22,10 @@ python3 -m unittest discover . -v
 
 Run `make verify` with Make and Python 3 installed. The target runs the documented sample through the project CLI. It also runs the existing Python unit tests.
 
+## Business problem
+
+A deployment can be operationally ready and still conflict with a business freeze or a tier-specific risky period.
+
 ## Project walkthrough
 
 ```mermaid
