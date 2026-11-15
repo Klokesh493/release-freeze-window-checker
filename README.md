@@ -2,6 +2,8 @@
 
 A deployment can be operationally ready and still conflict with a business freeze or a tier-specific risky period.
 
+[Skills and verification](docs/ENGINEERING_NOTES.md)
+
 ## What I built
 
 I built a release calendar check that compares deployment time against the inclusive freeze interval and applies a 22:00–06:00 restriction to Tier 1. It adds an allow or block decision to each CSV row.
